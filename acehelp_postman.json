@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "c2743d66-af52-49ca-bac1-dc9b06145f0f",
+		"name": "budget_assistance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6718885"
+	},
+	"item": [
+		{
+			"name": "budget",
+			"item": [
+				{
+					"name": "create budget",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"usdfg fees\",\n    \"amount\": \"889344\",\n    \"year\": 2021,\n    \"semester\": \"first\",\n    \"type\": \"income\",\n    \"category\": \"academic\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/budget",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"budget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get budget",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/budget/64aa7b120f98f0abb76f6dcd",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"budget",
+								"64aa7b120f98f0abb76f6dcd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all budget",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/budget",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"budget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all budget names",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/budget/names",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"budget",
+								"names"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "aggregates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/budget/aggregate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"budget",
+								"aggregate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "simulation",
+			"item": [
+				{
+					"name": "simulate transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"2021-01-jzSRlp\",\n    \"amount\": 90000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/simulate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"simulate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/simulate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"simulate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
