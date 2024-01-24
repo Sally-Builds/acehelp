@@ -28,7 +28,7 @@ export default class App {
             this.app.use(router.path, router.router);
         });
         this.app.get("/", (req, res, next) => {
-            res.send("Market Place Third Party Api now Available");
+            res.send("Ace Help now Available");
         });
         this.app.get("*", (req, res, next) => {
             res
