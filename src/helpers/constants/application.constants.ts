@@ -7,7 +7,7 @@ export enum MyReasons {
   EMAIL_EXIST = "Email already exist",
   LOGIN_INCORRECT_CREDENTIALS = "Username or Password incorrect",
   ENV_NOT_FOUND = "Environmental variables missing",
-  REGISTRATION_SUCCESSFUL = "Your registration was successful"
+  REGISTRATION_SUCCESSFUL = "Your registration was successful. Login to get started"
 }
 export namespace Reasons {
   export const DefaultReasons = ReasonPhrases;
