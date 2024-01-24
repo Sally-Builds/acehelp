@@ -1,11 +1,12 @@
 # acehelp
 
 
+live url - https://acehelp-bfne.onrender.com/
 ## Authentication Controller
 
 ### Register User
 
-* Endpoint: POST /api/auth/register
+* Endpoint: POST /auth/register
 
   * Description  - Registers a new user.
 
@@ -13,7 +14,7 @@
 
       * Method: POST
 
-      * URL: /api/auth/register
+      * URL: /auth/register
 
       * Body:
 
@@ -44,13 +45,13 @@
 
 ### Login User
 
-* Endpoint: POST /api/auth/login
+* Endpoint: POST /auth/login
   * Description - Logs in an existing user and returns an authentication token.
     * Request
 
         * Method: POST
 
-        * URL: /api/auth/login
+        * URL: /auth/login
 
         * Body:
 
@@ -75,11 +76,11 @@
 
 ## User Controller
 ### Get Current User
-* Endpoint: GET /api/user/me
+* Endpoint: GET /user/me
 * Description: Retrieves information about the currently authenticated user.
 * Request:
   * Method: GET
-  * URL: /api/user/me
+  * URL: /user/me
     * Response:
       * Status: 200 OK 
       * Body:
@@ -97,11 +98,11 @@
 ## Service Controller
 ### Create Service
 
-* Endpoint: POST /api/service/create
+* Endpoint: POST /service/create
 * Description - Creates a new service.
 * Request 
   * Method: POST 
-  * URL: /api/service/create 
+  * URL: /service/create 
   * Body:
   ```json
   {
@@ -129,11 +130,11 @@
               }
 
 ### Create SubService
-* Endpoint: POST /api/service/create-subservice 
+* Endpoint: POST /service/create-subservice 
 * Description - Creates a new sub-service. 
   * Request 
     * Method: POST 
-    * URL: /api/service/create-subservice 
+    * URL: /service/create-subservice 
     * Body:
     ```json
      {
@@ -160,11 +161,11 @@
             }
 
 ### Get Service Aggregate
-* Endpoint: GET /api/service/:id
+* Endpoint: GET /service/:id
 * Description - Retrieves aggregated data for a specific service. 
 * Request 
   * Method: GET 
-  * URL: /api/service/:id 
+  * URL: /service/:id 
   * Response 
     * Status: 200 OK
     * Body:
@@ -181,11 +182,11 @@
                 }
 
 ### Get Services
-* Endpoint: GET /api/services
+* Endpoint: GET /services
 * Description - Retrieves a list of all services.
 * Request 
   * Method: GET
-  * URL: /api/services
+  * URL: /services
     * Response
       * Status: 200 OK
       * Body:
